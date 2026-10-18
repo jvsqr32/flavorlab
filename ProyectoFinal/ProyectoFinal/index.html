@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hoja de estilos compartida por todas las páginas -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Flavor Lab</title>
+</head>
+<body>
+  <!-- ===== Encabezado: nombre del restaurante y navegación ===== -->
+  <header>
+    <h1 class="page-title">The Flavor Lab</h1>
+    <nav>
+      <a href="index.html" class="nav-link" aria-current="page">Inicio</a>
+      <a href="menu.html" class="nav-link">Menú</a>
+    </nav>
+  </header>
+
+  <!-- ===== Contenido principal ===== -->
+  <main>
+    <!-- Imagen principal (logo del restaurante) -->
+    <img src="img/hero.svg" alt="Logo de Flavor Lab" class="imagen-principal">
+
+    <!-- Presentación del restaurante -->
+    <article>
+      <h2 class="section-title">Nuestro Restaurante</h2>
+      <p class="descripcion">
+        Flavor Lab es un restaurante moderno que ofrece una experiencia
+        gastronómica diferente, combinando sabores únicos, creatividad y calidad en
+        cada plato. Nuestro menú reúne una variedad de opciones pensadas para
+        satisfacer distintos gustos, utilizando ingredientes frescos y una
+        presentación atractiva.
+      </p>
+      <p class="descripcion">
+        En Flavor Lab buscamos convertir cada comida en una experiencia
+        especial, dentro de un ambiente cómodo, moderno y agradable. Nuestro
+        objetivo es ofrecer buena comida, excelente atención y sabores que hagan que
+        cada visita sea memorable.
+      </p>
+    </article>
+
+    <!-- Botón que lleva a la página del menú -->
+    <div class="centrado">
+      <a href="menu.html" class="boton">Ver el menú</a>
+    </div>
+
+    <!-- Tarjetas de categorías: cada una lleva a su sección del menú -->
+    <section>
+      <h2 class="section-title">Nuestro Menú</h2>
+      <div class="tarjetas">
+        <a href="menu.html#entradas" class="tarjeta">
+          <img src="img/entradas.svg" alt="Entradas">
+          <h3>Entradas</h3>
+        </a>
+        <a href="menu.html#platos-fuertes" class="tarjeta">
+          <img src="img/platos.svg" alt="Platos fuertes">
+          <h3>Platos Fuertes</h3>
+        </a>
+        <a href="menu.html#postres" class="tarjeta">
+          <img src="img/postres.svg" alt="Postres">
+          <h3>Postres</h3>
+        </a>
+        <a href="menu.html#bebidas" class="tarjeta">
+          <img src="img/bebidas.svg" alt="Bebidas">
+          <h3>Bebidas</h3>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="footer">
+    © Derechos Reservados. The Flavor Lab 2026
+  </footer>
+</body>
+</html>
