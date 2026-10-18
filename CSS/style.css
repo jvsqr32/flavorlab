@@ -1,0 +1,220 @@
+/* ==========================================================
+   The Flavor Lab - Hoja de estilos
+   Paleta: rojo #BB0A21 | gris #D3D4D9 | blanco #FFFFFF | texto #252627
+   ========================================================== */
+
+/* ---------- Estilos generales ---------- */
+body {
+    background-color: #D3D4D9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #252627;
+    margin: 0;
+}
+
+/* ---------- Encabezado ---------- */
+header {
+    background-color: #BB0A21;
+    padding: 10px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 36px;
+    color: white;
+    margin: 10px 0;
+}
+
+/* Navegación con Flexbox: botones centrados en fila */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* Botones de navegación con borde redondeado */
+.nav-link {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 18px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+/* Efecto al pasar el cursor: fondo blanco y texto rojo */
+.nav-link:hover {
+    background-color: white;
+    color: #BB0A21;
+}
+
+/* ---------- Contenido principal ---------- */
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Títulos de sección en rojo */
+.section-title {
+    font-size: 26px;
+    color: #BB0A21;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* ---------- Página de inicio ---------- */
+.imagen-principal {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Botón "Ver el menú" */
+.boton {
+    display: inline-block;
+    background-color: #BB0A21;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 2px solid #BB0A21;
+}
+
+.boton:hover {
+    background-color: white;
+    color: #BB0A21;
+}
+
+.centrado {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Tarjetas de categorías con CSS Grid: 4 columnas en escritorio */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 2px solid #BB0A21;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #252627;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    margin: 10px 0 5px 0;
+    color: #BB0A21;
+}
+
+/* Al pasar el cursor la tarjeta se vuelve roja */
+.tarjeta:hover {
+    background-color: #BB0A21;
+    color: white;
+}
+
+/* El título también cambia a blanco para que no desaparezca */
+.tarjeta:hover h3 {
+    color: white;
+}
+
+/* ---------- Página del menú ---------- */
+/* Cada categoría: imagen junto al texto con Flexbox */
+.seccion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #BB0A21;
+}
+
+.imagen-menu {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.contenido {
+    flex: 1;
+}
+
+/* Platos y precios */
+.menu-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 15px;
+    margin: 3px 0;
+}
+
+/* ---------- Pie de página ---------- */
+.footer {
+    background-color: #BB0A21;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* ---------- Diseño responsivo ---------- */
+/* Tablet (hasta 768 px): tarjetas en 2 columnas */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imagen-menu {
+        width: 180px;
+    }
+}
+
+/* Celular (hasta 480 px): todo en una sola columna */
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 28px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion {
+        flex-direction: column;
+    }
+
+    .imagen-menu {
+        width: 100%;
+    }
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Porción de pastel"><rect width="400" height="300" fill="#D3D4D9"/>
+<ellipse cx="200" cy="235" rx="140" ry="22" fill="#fff"/>
+<path d="M95 220V150L305 120V220z" fill="#F4D7B0"/><path d="M95 185L305 160" stroke="#BB0A21" stroke-width="10"/>
+<path d="M95 150L305 120l-10-18L105 128z" fill="#fff"/><path d="M95 150q15 25 30 0q15 28 32-3q15 25 32-6q16 22 32-9q16 20 32-10q16 18 32-12" fill="#fff"/>
+<circle cx="200" cy="108" r="16" fill="#BB0A21"/><path d="M200 94q6-24 24-28" stroke="#3E8E41" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
